@@ -2,6 +2,6 @@ To compile:
 run "make"
 
 To Run:
-run "./simulation <numStations> <RNG seed>"
+run "./simulation <avgSpacing> <numTrials> <RNG seed>"
 
-Both arguments are optional (defaults: numStations = 100, seed = 42). The program runs 100 trials and outputs the average delay in time slots before the first successful transmission.
+All arguments are optional (defaults: avgSpacing = 1.0, numTrials = 10000, seed = 42). The program simulates unslotted ethernet over the specified number of trials and outputs the average contention interval in time slots.
